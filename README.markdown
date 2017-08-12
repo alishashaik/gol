@@ -8,6 +8,3 @@ Test Build Trigger
 
 Test Build Trigger
 alisha
-ALISHAKASKLASXKJMSDKXNDXJNDXJXKMJDXKOJXNDOJKXNWXJMXIKMSXAJKXSNAOXOAXNAK
-
-najksakdlakdmkaldxkwapdlqwopd,xlqwopdkopdskqwpox,qwxopwqkxopqwxpqkwop
