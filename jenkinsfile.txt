@@ -1,13 +1,13 @@
 pipeline {
   // where pipeline job will run
-  agent {
-    label "Windows_Slave"
-  }
-  tools {
+  agent any //{
+   // label "Windows_Slave"
+ // }
+  //tools {
    
-    jdk "JDK 1.8.0_05"
-    maven "Maven 3.5.0"
-  }
+   // jdk "JDK 1.8.0_05"
+   // maven "Maven 3.5.0"
+ // }
   // start of stages : build, test, deploy ...
   stages {
     // start of stage : build
@@ -24,7 +24,7 @@ pipeline {
       
       steps {
       
-        bat 'xcopy /y C:\\Program Files (x86)\\jenkins_slave\\workspace\\GOL_Pipeline\\gameoflife-web\\target "C:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\webapps"'
+        bat 'xcopy /y C:\\Program Files (x86)\\jenkins\\workspace\\GOL_Pipeline\\gameoflife-web\\target "C:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\webapps"'
      
         
       }
