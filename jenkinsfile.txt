@@ -24,7 +24,11 @@ pipeline {
       
       steps {
       
-        bat 'xcopy /y C:\\Program Files (x86)\\jenkins\\workspace\\GOL_Pipeline\\gameoflife-web\\target "C:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\webapps"'
+        //bat 'xcopy /y C:\\Program Files (x86)\\jenkins\\workspace\\GOL_Pipeline\\gameoflife-web\\target "C:\\Program Files\\Apache //Software Foundation\\Tomcat 7.0\\webapps"'
+        set +x
+        echo "Deploying to Tomcat at http://tomcat:8080/myapp"
+        curl -s --upload-file target/gameoflife.war "http://user:password@localhost:8888/manager/text/deploy?           path=/gameoflife&update=true&tag=${BUILD_TAG}"
+
      
         
       }
