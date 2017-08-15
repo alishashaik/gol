@@ -24,7 +24,7 @@ pipeline {
       
       steps {
       
-        //bat 'xcopy /y C:\\Program Files (x86)\\jenkins_slave\\workspace\\GOL_Pipeline\\gameoflife-web\\target "C:\\Program Files (x86)\\tomcat\\webapps"'
+        bat 'xcopy /y C:\\Program Files (x86)\\jenkins_slave\\workspace\\GOL_Pipeline\\gameoflife-web\\target "C:\\Program Files (x86)\\tomcat\\webapps"'
        
 
      
